@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-sm bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/sign-in">RA App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <!--<li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/sign-in">Home</a>
+        </li> -->
+
+        <li *ngIf="!signedIn" class="nav-item">
+          <a class="nav-link" routerLink="/sign-in">Sign In</a>
+        </li>
+        <li *ngIf="signedIn" class="nav-item">
+          <a class="nav-link" (click)="signOut()" routerLink="/open">Sign Out</a>
+        </li>
+
+
+
+        <li class="nav-item" *ngIf="signedIn">
+          <a class="nav-link" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item" *ngIf="!signedIn">
+          <a class="nav-link [disabled]='signedIn' ">Home</a>
+        </li>
+        <li class="nav-item" *ngIf="signedIn">
+          <a class="nav-link" routerLink="/team">TEAM</a>
+        </li>
+        <li class="nav-item" *ngIf="!signedIn">
+          <a class="nav-link [disabled]='signedIn' ">TEAM</a>
+        </li>
+        <li class="nav-item" *ngIf="signedIn">
+          <a class="nav-link" routerLink="/calendar">Calendar</a>
+        </li>
+        <li class="nav-item" *ngIf="!signedIn">
+          <a class="nav-link [disabled]='signedIn' ">Calendar</a>
+        </li>
+        <li class="nav-item" *ngIf="signedIn">
+          <a class="nav-link" routerLink="/student-database">Student Database</a>
+        </li>
+        <li class="nav-item" *ngIf="!signedIn">
+          <a class="nav-link [disabled]='signedIn' ">Student Database</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
