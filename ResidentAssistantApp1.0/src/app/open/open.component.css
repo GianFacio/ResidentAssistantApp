@@ -1,0 +1,26 @@
+/*
+Body of the page
+*/
+.body{
+  background-color: #B294E4;
+  color: azure;
+  font-size: 28px;
+  align-content: center;
+  padding-top: 180px;
+}
+
+/*
+Button for the page
+*/
+.button {
+  text-align: center;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 10px;
+  cursor: pointer;
+  height: 60px;
+  width: 180px;
+}
