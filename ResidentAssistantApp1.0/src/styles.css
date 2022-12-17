@@ -1,10 +1,15 @@
+/*
+Color replacement for the app
+*/
 html
 {
   background-color: #B294E4;
   };
 
-
-  *
-  {
-  font-family: 'SourJce Sans Pro', sans-serif;
-  }
+/*
+Font replacement for the app
+*/
+*
+{
+font-family: 'SourJce Sans Pro', sans-serif;
+}
