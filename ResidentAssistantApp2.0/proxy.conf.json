@@ -1,0 +1,14 @@
+{
+    "/students/*" : {
+        "target" : "http://localhost:3000/students",
+        "pathRewrite": {
+            "^/students" : ""
+        }
+    },
+    "/team/*" : {
+        "target" : "http://localhost:3000/team",
+        "pathRewrite": {
+            "^/team" : ""
+        }
+    }
+  }

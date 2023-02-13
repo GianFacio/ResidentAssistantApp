@@ -1,0 +1,28 @@
+<!-- Button to retract to the home page -->
+<div class="body1">
+    <img src="./../../assets/images/back.png" routerLink="/home" style="width: 40px; background-color:#ADA2FF ;"/>
+</div>
+
+
+<!-- Place holder for the student database-->
+<div align="center" class="body">
+  <h1>Student Database</h1>
+
+<!-- Search filter for student name results -->
+
+  <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off"
+    placeholder="Enter students name" />
+</div>
+<div>
+  <!-- Partial page for student information -->
+
+  <table class="table table-hover">
+    <tbody>
+      <app-display-student *ngIf="selectedStudent" [student]="selectedStudent"></app-display-student>
+      <tr align="center" *ngFor="let student of students | filter:searchText " (click)="onSelectStudent(student)">
+        <td>{{student.firstName}} {{student.lastName}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
