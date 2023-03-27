@@ -1,0 +1,36 @@
+/*
+Body of the page
+*/
+.body{
+  background-color: #ADA2FF;
+}
+
+/*
+Custom button for the page
+*/
+.button {
+  text-align: center;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 80px 30px;
+  cursor: pointer;
+  height: 80px;
+  width: 180px;
+}
+
+/*
+Each button will be different color
+*/
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: #D64933;}
+.button2 {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: #7eb3eb;}
+.button3 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: #26A79F;}

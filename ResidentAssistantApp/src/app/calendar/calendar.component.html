@@ -1,0 +1,36 @@
+<!-- Button to retract to the home page -->
+<div class="body1">
+  <img src="./../../assets/images/back.png" routerLink="/home" style="width: 40px; background-color:#ADA2FF ;"/>
+</div>
+
+<!-- Calendar placeholder until new functional one is developed -->
+<div align="center" class="body">
+  <h1>Calendar</h1>
+
+  <article class="body">
+    <igx-calendar></igx-calendar>
+  </article>
+<br/>
+
+
+<!-- Buttons to add and edit events -->
+<div align="center" class="body1">
+  <button class="btn" style="margin-right:  60px;" routerLink="/create-calendar"> Add Event</button>
+  <button class="btn"> Edit Event</button>
+</div>
+
+<!-- Place holder for the team page-->
+<br/>
+<div class="container">
+  <h1>Events</h1>
+  <div align="center">
+    <button class="btn" align="center" *ngFor="let calendar of calendars | filter:searchText " (click)="onSelectCalendar(calendar)">
+      <div >{{calendar.eventName}} : {{calendar.eventDate}}</div>
+    </button>
+    <app-list-calendar *ngIf="selectedCalendar" [calendar]="selectedCalendar"></app-list-calendar>
+  </div>
+</div>
+
+
+
+</div>

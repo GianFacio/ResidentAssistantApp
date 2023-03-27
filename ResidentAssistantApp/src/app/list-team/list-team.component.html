@@ -1,0 +1,22 @@
+<!-- Button to retract to the home page -->
+<div class="body1">
+  <img src="./../../assets/images/back.png" routerLink="/home" style="width: 40px; background-color:#ADA2FF ;"/>
+</div>
+
+
+<!-- Place holder for the student database-->
+<div align="center" class="body">
+<h1>TEAM</h1>
+<div>
+<!-- Partial page for student information -->
+
+<div class="container">
+  <div class="row">
+    <button class="btn" align="center" *ngFor="let team of teams | filter:searchText " (click)="onSelectTeam(team)">
+      <div class="col">{{team.month}}</div>
+    </button>
+    <app-team *ngIf="selectedTeam" [team]="selectedTeam"></app-team>
+  </div>
+</div>
+</div>
+

@@ -1,0 +1,28 @@
+<!-- Calendar Information -->
+  <div class="body">
+    <table class="table mb-sm-1 body">
+      <tbody>
+        <tr>
+          <th>Event Name</th>
+          <td>{{calendar!.eventName}}</td>
+        </tr>
+        <tr>
+          <th >Event Time</th>
+          <td>{{calendar!.eventTime}}</td>
+        </tr>
+        <tr>
+          <th>Event Date</th>
+          <td>{{calendar!.eventDate}}</td>
+        </tr>
+        <tr>
+          <th>Event Location</th>
+          <td>{{calendar!.eventLocation}}</td>
+        </tr>
+      </tbody>
+
+    </table>
+    <button align="center" class="btn" [routerLink]="['/delete-calendar', calendar!.calendarId]">Delete</button>
+    <br/>
+</div>
+
+
