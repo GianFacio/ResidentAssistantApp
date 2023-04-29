@@ -24,11 +24,10 @@ DROP TABLE IF EXISTS `materials`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `materials` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `shoe_id` int(11) NOT NULL,
   `name` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `shoe_id_FK_idx` (`shoe_id`),
-  CONSTRAINT `shoeS_id_FK` FOREIGN KEY (`shoe_id`) REFERENCES `testingdata` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `id_FK_idx` (`id`),
+  CONSTRAINT `shoeS_id_FK` FOREIGN KEY (`id`) REFERENCES `testingdata` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -38,7 +37,7 @@ CREATE TABLE `materials` (
 
 LOCK TABLES `materials` WRITE;
 /*!40000 ALTER TABLE `materials` DISABLE KEYS */;
-INSERT INTO `materials` VALUES (1,1,'Leather'),(2,5,'Suade');
+INSERT INTO `materials` VALUES (1,1,''),(2,5,'');
 /*!40000 ALTER TABLE `materials` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
