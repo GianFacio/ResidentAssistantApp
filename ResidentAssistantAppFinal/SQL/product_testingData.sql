@@ -38,7 +38,7 @@ CREATE TABLE `testingData` (
 
 LOCK TABLES `testingData` WRITE;
 /*!40000 ALTER TABLE `testingData` DISABLE KEYS */;
-INSERT INTO `testingData` VALUES (1,'Gian Facio','8-119','951-534-8256','Senior'),(5,'Emma Reeder','6-122','800-123-4567','Senior'),(6,'Miguel Tamayo','7-123','800-123-4567','Junior'),(18,'Ketti Prisk','8-112','700-000-0000','Freshman'),(19,'Jodi Durn','8-112','900-888-9999','Freshman'),(20,'Alyson MacWhan','8-112','333-202-6006','Senior'),(21,'Chrissie Dehmel','8-112','333-202-6006','Senior'),(22,'Giancarlo Facio','Red','8.5','$200');
+INSERT INTO `testingData` VALUES (1,'Gian Facio','8-119','800-123-8256','Senior'),(5,'Emma Reeder','6-122','800-123-4567','Senior'),(6,'Miguel Tamayo','7-123','800-123-4567','Junior'),(18,'Ketti Prisk','8-112','700-000-0000','Freshman'),(19,'Jodi Durn','8-112','900-888-9999','Freshman'),(20,'Alyson MacWhan','8-112','333-202-6006','Senior'),(21,'Chrissie Dehmel','8-112','333-202-6006','Senior');
 /*!40000 ALTER TABLE `testingData` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
