@@ -1,0 +1,37 @@
+<!-- Button to retract to the home page -->
+<div class="body1">
+  <img src="./../../assets/images/back.png" routerLink="/calendar" style="width: 40px; background-color:#ADA2FF ;"/>
+</div>
+
+<!-- Form page to create an event for the Calendar feature -->
+<div align="center" class="body">
+  <h1>Create Event</h1>
+<div align="center" class="body" style="margin-left:50px;margin-right:50px" *ngIf="!wasSubmitted">
+  <form (ngSubmit)="onSubmit()" #createForm="ngForm">
+
+      <div class="form-group">
+          <h3 for="eventName">Event Name</h3>
+          <input id="eventName" type="text" class="form-control" aria-describedby="helpEventName" placeholder="Enter the name of the event" required [(ngModel)]="calendar.eventName" name="eventName">
+        </div>
+      <div class="form-group">
+          <h3 for="eventTime">Event Time</h3>
+          <input id="eventTime" type="text" class="form-control" aria-describedby="helpEventTime" placeholder="Enter the time of the event" required [(ngModel)]="calendar.eventTime" name="eventTime">
+       </div>
+      <div class="form-group">
+          <h3 for="eventDate">Event Date</h3>
+          <input id="eventDate" type="text" class="form-control" aria-describedby="helpEventDate" placeholder="Enter the date of the event" required [(ngModel)]="calendar.eventDate" name="eventDate">
+      </div>
+      <div class="form-group">
+          <h3 for="eventLocation">Event Location</h3>
+          <input id="eventLocation" type="text" class="form-control" aria-describedby="helpEventLocation" placeholder="Enter the location of the event" [(ngModel)]="calendar.eventLocation" name="eventLocation">
+      </div>
+<br>
+      <button type="submit" class="btn">Create</button>
+    </form>
+
+  </div>
+
+  <!-- Event has been successfully submitted to database-->
+  <div  *ngIf="wasSubmitted">
+    Event was added successfully.
+  </div>

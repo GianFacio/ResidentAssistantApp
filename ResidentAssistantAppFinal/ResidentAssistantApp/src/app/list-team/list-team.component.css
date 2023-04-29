@@ -1,0 +1,28 @@
+/*
+  Body background to blend feature into app
+*/
+.body {
+  background-color: #ADA2FF;
+  color: azure;
+  font-size: 28px;
+  align-content: center;
+}
+.body1 {
+  background-color: #ADA2FF;
+  color: azure;
+  font-size: 28px;
+  align-content: center;
+  padding-left: 5px;
+}
+
+tr{
+  background-color: #ADA2FF;
+  color: azure;
+}
+button{
+  background-color: white;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding: 20px;
+
+}
